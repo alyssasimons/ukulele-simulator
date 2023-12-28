@@ -54,10 +54,13 @@ a {
 @media (max-width: 576px) { 
   h1 {
     font-size: 3rem;
+    padding-bottom: 5px;
   }
 
   img {
-    margin: 120px 0 20px;
+    margin: 150px 0 100px 0;
+    transform: rotate(0.25turn);
+    display: inline-block
   }
 
   .set {
@@ -69,6 +72,38 @@ a {
     margin-top: 135px;
    
   }
- }
+}
 
-/* revise media query for tablets */
+/* galaxy fold */ 
+@media (max-width: 280px) {
+
+  img {
+    margin: 100px 0 75px 0;
+  }
+
+  footer {
+    margin: 50px 0 10px 0;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  img {
+    margin: 150px 0 200px 0;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+
+}
