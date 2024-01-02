@@ -4,6 +4,14 @@ for (let i = 0; i < buttons; i++) {
 
   document.querySelectorAll(".chord")[i].addEventListener("click", function() {
 
+    $(this).animate( {
+      opacity: 0.65
+    });
+    
+    $(this).animate( {
+      opacity: 1
+    });
+
     const buttonInnerHTML = this.innerHTML;
 
     chordSounds(buttonInnerHTML);
